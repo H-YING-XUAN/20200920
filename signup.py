@@ -20,7 +20,7 @@ browser.find_element_by_xpath("//input[@type='radio'][@name='auth_type'][@value=
 browser.find_element_by_name('p_usr').send_keys('S0761030') #}輸入自己的帳號
 browser.find_element_by_name('p_pwd').send_keys('000000000') #}輸入自己的密碼
 browser.find_element_by_name('log').click()       
-time.sleep(3)
+time.sleep(3)#避免被鎖ip
 browser.get('https://aps.ncue.edu.tw/sign_up/sign_app.php?crs_seq=41913&object=1')
 time.sleep(3)
 browser.find_element_by_name("Value").send_keys(Keys.ENTER)
